@@ -46,6 +46,9 @@ the number of active features
 
 inbalance = 1
 how imbalanced the test data is distributed in the underlying cluster, 1 means a giant centroid, 0 means the test data are evenly distributed among all clucsters
+let c_1,..,c_k be the porportion of test data(comparing to the total size of test data) in each of the underlying clusters
+inbalance = var(c_i)*k
+
 
 hetero = 1
 the heterogeneity of the feature mapping. 0 indicates no feature mapping heterogeneity
