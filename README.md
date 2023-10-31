@@ -1,12 +1,10 @@
 # test-feature-weighted-forest
 
-Biological data often exhibit natural clustering and batch effects. In this study, we investigate the impact of ensembling Random Forest learners trained on data clusters derived from a single dataset, accounting for feature distribution heterogeneity and feature mapping heterogeneity.
+In biological data, natural clustering and batch effects are common. Our study explores the impact of creating ensembles of Random Forest learners trained on data clusters from a single dataset, while addressing feature distribution and feature mapping heterogeneity.
 
-Our findings reveal that constructing ensembles of forests, trained on machine-learning-determined clusters, with each point weighted according to test dataset feature information, leads to substantial improvements in accuracy and generalizability compared to traditional Random Forest algorithms.
+Our findings demonstrate that ensembling machine-learning-driven forests, significantly improves accuracy and generalizability compared to traditional Random Forest algorithms.
 
-This work is built upon Maya Ramchandran's 'Cross-cluster weighted forest.' My modification involves incorporating information from the features of the test dataset into the weighting of individual data points during the stacked regression step. This adaptation enhances Maya's algorithm, ensuring robust performance even in the presence of feature mapping heterogeneity.
-
-
+This work builds on Maya Ramchandran's 'Cross-cluster weighted forest' by integrating test dataset feature information into the weighted regression step. This adaptation enhances Maya's algorithm, ensuring robust performance even with feature mapping heterogeneity.
 
 
 
