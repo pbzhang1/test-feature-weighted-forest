@@ -36,6 +36,18 @@ library(BiocGenerics)
 
 norm_vec <- function(x) sqrt(sum(x^2))
 
+absnorm <- function(vec, max.norm = FALSE){
+  sgn <- sign(vec)
+  vec <- abs(vec)
+  if(max.norm){
+    mvec <- max(vec)	
+  } else {
+    mvec <- min(vec)
+  }
+  
+  vec <- abs(vec - mvec)
+  sgn*(vec/sum(vec))
+}
 
 rcomb <- function(...) {
   args <- list(...)
